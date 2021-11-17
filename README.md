@@ -1,7 +1,7 @@
 # Buddy OnDemand - Desktop
 
-[![GitHub Release](https://img.shields.io/github/v/release/UCO-HPC/buddy_jupyter?style=flat-square)](https://github.com/UCO-HPC/buddy_ansys/blob/main/CHANGELOG.md)
-[![GitHub License](https://img.shields.io/github/license/UCO-HPC/buddy_jupyter?style=flat-square)](https://opensource.org/licenses/MIT)
+[![GitHub Release](https://img.shields.io/github/v/release/UCO-HPC/buddy_desktop?style=flat-square)](https://github.com/UCO-HPC/buddy_desktop/blob/main/CHANGELOG.md)
+[![GitHub License](https://img.shields.io/github/license/UCO-HPC/buddy_desktop?style=flat-square)](https://opensource.org/licenses/MIT)
 
 An app designed for UCO's OnDemand that launches a desktop
 
