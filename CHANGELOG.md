@@ -5,7 +5,7 @@ Changes to this project that result in an increase of the major and or minor rev
 - Load universally customized Xfce desktop
 
 ## [v2.0.0] - 2021-12-01
-- Added "optional module" entry to form.yml for loading in template/script
+- Modules listed in form.yml will now be loaded via template/script.sh.erb
 - Fixed changelog
 
 ## [v1.0.0] - 2021-11-17
