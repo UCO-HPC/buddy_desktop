@@ -12,6 +12,6 @@ Changes to this project that result in an increase of the major and or minor rev
 ### Added
 - Initial commit of current code
 
-[Unreleased]: https://github.com/UCO-HPC/buddy_desktop/compare/v2.0.0...HEAD
+[Unreleased]: https://github.com/UCO-HPC/buddy_desktop/compare/v2.0.0...devel
 [v2.0.0]: https://github.com/UCO-HPC/buddy_desktop/compare/v1.0.0...v2.0.0
 [v1.0.0]: https://github.com/UCO-HPC/buddy_desktop/releases/tag/v1.0.0
