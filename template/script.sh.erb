@@ -3,20 +3,15 @@
 # Change working directory to user's home directory
 cd "${HOME}"
 
-
-<%- unless context.modules.blank? -%> 
-# Purge the module environment to avoid conflicts
 module purge
 
-# Load the require modules
-module load <%= context.modules %>
-
-# List loaded modules
 module list
-<%- end -%> 
 
 # Ensure that the user's configured login shell is used
 export SHELL="$(getent passwd $USER | cut -d: -f7)"
+
+# Put XDG_RUNTIME_DIR in a user writable location
+export XDG_RUNTIME_DIR="/tmp/${UID}"
 
 # Start up desktop
 echo "Launching desktop '<%= context.desktop %>'..."
