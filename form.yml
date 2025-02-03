@@ -1,25 +1,26 @@
 ---
-cluster: "buddy"
+cluster: "buddy-2.5"
 form:
   - desktop
-  - modules
   - buddy_queue
   - buddy_num_hours
-  - buddy_num_cores
+#  - buddy_num_cores
+  - modules
   - bc_vnc_idle
   - bc_vnc_resolution
 
 attributes:
   desktop: "xfce"
-  modules: ""
   buddy_queue:
     label: Partition
     help: Please select a queue from the drop-down
     widget: select
     options:
-      - [ "General", "general" ] 
-      - [ "High Mem", "high-mem" ]
-      - [ "GPU", "gpu" ]
+      - [ "Desktop", "desktop"]
+#      - [ "Testing", "testing" ]
+#      - [ "General", "general" ] 
+#      - [ "High Mem", "high-mem" ]
+#      - [ "GPU", "gpu" ]
   buddy_num_hours:
     widget: number_field
     label: "Number of hours"
@@ -29,16 +30,21 @@ attributes:
     max: 48
     step: 1
     value: 2
-  buddy_num_cores:
-    widget: number_field
-    label: "Number of cores"
-    required: true
-    help: "Set the number of cores for this job (1-20)"
-    min: 1
-    max: 20
-    step: 1
-    value: 2
+  # buddy_num_cores:
+  #   widget: number_field
+  #   label: "Number of cores"
+  #   required: true
+  #   help: "Set the number of cores for this job (1-20)"
+  #   min: 1
+  #   max: 20
+  #   step: 1
+  #   value: 2
+  modules:
+    widget: text_field
+    label: "Additional modules"
+    required: false
+    help: "Additional modules you wish to load seperated by spaces."
+    value: ""
   bc_vnc_idle: 0
   bc_vnc_resolution:
       required: true
-    
